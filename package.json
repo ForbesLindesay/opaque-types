@@ -4,6 +4,9 @@
   "description": "Generate opaque types for typescript.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "bin": {
+    "opaque-types": "./cli.js"
+  },
   "files": [
     "lib"
   ],

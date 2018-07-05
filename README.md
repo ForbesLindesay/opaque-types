@@ -31,7 +31,7 @@ export const Email = {
 };
 ```
 
-This will generate a file called `types.ts` (i.e. without the `.src` part), that exposes opaque/nominal types, along with an API for casting to and from them.
+Running `opaque-types <dirname>` will generate a file called `types.ts` (i.e. without the `.src` part), that exposes opaque/nominal types, along with an API for casting to and from them.
 
 Usage:
 
