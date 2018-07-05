@@ -2,7 +2,7 @@
 
 Support for opaque and nominal types in typescript via a transformation.
 
-[![Build Status](https://img.shields.io/travis/ForbesLindesay/opaque-types/master.svg)](https://travis-ci.org/ForbesLindesay/opaque-types)
+[![Build Status](https://img.shields.io/travis/ForbesLindesay/opaque-types/master.svg)](https://travis-ci.org/ForbesLindesay/opaque-types) [![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/opaque-types.svg)](https://greenkeeper.io/)
 
 ## Installation
 
