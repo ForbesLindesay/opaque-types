@@ -8,7 +8,8 @@
     "opaque-types": "./cli.js"
   },
   "files": [
-    "lib"
+    "lib",
+    "cli.js"
   ],
   "scripts": {
     "pretest": "npm run build",
