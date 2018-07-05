@@ -230,15 +230,14 @@ class Type {
       if (expose) {
         intersection.push(baseReference);
       }
-      if (opaque) {
-        intersection.push(symbolReference);
-      }
       intersection.push(classReference);
 
       const typeAlias = tsTypeAliasDeclaration(
         id,
         typeParameters,
-        tsIntersectionType(intersection),
+        expose
+          ? tsIntersectionType([baseReference, classReference])
+          : classReference,
       );
       addComment(
         typeAlias,
