@@ -1,0 +1,61 @@
+{
+  "name": "opaque-types",
+  "version": "1.0.0",
+  "description": "Generate opaque types for typescript.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "pretest": "npm run build",
+    "prepublishOnly": "npm run build",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForbesLindesay/character-parser.git"
+  },
+  "keywords": [],
+  "author": "ForbesLindesay",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.5.1",
+    "typescript": "^2.4.0"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.0.0-beta.51",
+    "@babel/parser": "^7.0.0-beta.51",
+    "@babel/types": "^7.0.0-beta.51",
+    "@types/jest": "^23.1.1",
+    "jest": "^23.1.0",
+    "lsr": "^2.0.0",
+    "prettier": "^1.13.5",
+    "ts-jest": "^22.4.6"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "src/.*(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": false,
+    "jsxBracketSameLine": false
+  }
+}
